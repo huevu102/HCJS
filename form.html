@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/form.css"/>
+</head>
+<body>
+    <form method="get" action="#">
+        <lable>Full Name</lable>
+        <input type="text" name="full-name" placeholder="Full name" required/>
+        <br>
+        <label>Email</label>
+        <input type="email" name="your-email" placeholder="Email..." required/>
+        <br>
+        <label>Telephone</label>
+        <input type="tel" name="phone-number" placeholder="Phone number" required/>
+        <br>
+        <label>Password</label>
+        <input type="password" name="your-pwd" placeholder="Password..." required/>
+        <br>
+        <label>Age</label>
+        <input type="number" min="1" max="100" name="my-age" placeholder="Age..." />
+        <br>
+        <label>Birthday</label>
+        <input type="date" name="your-birthday" placeholder="Birthday..." />
+        <br>
+        <label>Time</label>
+        <input type="time" name="your-time" placeholder="Time..." />
+        <br>
+        <label>My Color</label>
+        <input type="color" name="your-color" placeholder="Color..." />
+        <br>
+        <label>Gender</label>
+        <label><input type="radio" name="gender" value="male"/>Male</label>
+        <label><input type="radio" name="gender" value="female"/>Female</label>
+        <label><input type="radio" name="gender" value="other"/>Other</label>
+        <br>
+        <label><input type="checkbox" name="confirm" value="yes" />I agree</label>
+        <br>
+        <label>Profile</label>
+        <textarea name="description" rows="10" cols="50"></textarea>
+        <br>
+        <label>City</label>
+        <select name="city">
+            <optgroup label="Miền Bắc">
+                <option value="hanoi">Hà Nội</option>
+                <option value="haiphong">Hải Phòng</option>
+            </optgroup>
+            <optgroup label="Miền Nam">
+                <option value="saigon">Sài Gòn</option>
+                <option value="cantho">Cần Thơ</option>
+            </optgroup>
+        </select>
+        <button type="button">Button</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

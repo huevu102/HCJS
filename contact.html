@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <h2>Contact Form</h2>
+    <form method="get" action="#">
+        <div class="name">
+            <label>Name:<span>*</span></label>
+            <br>
+            <div class="left">
+                <input type="text" name="first-name" required/>
+                <br>
+                First name
+            </div>
+            <div class="right">
+                <input type="text" name="last-name" required/>
+                <br>
+                Last name
+            </div>
+        </div>
+
+        <div class="email">
+            <label>Email:<span>*</span></label>
+            <br>
+            <input type="email" name="your-email-address" required/>
+        </div>
+
+        <div class="phone">
+            <label>Phone:<span>*</span></label>
+            <br>
+            <input type="tel" name="your-phone-number" required/>
+        </div>
+
+        <button type="button">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    width: 600px;
+    font-family: sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+h2{
+    background-color: mediumseagreen;
+    padding: 30px;
+    color: #fafafa;
+    font-weight: 400;
+    text-align: left;
+}
+
+form{
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+span{
+    color: red;
+    vertical-align: super;
+}
+
+div .left{
+    float: left;
+    width: 45%;
+    color: #999999;
+}
+
+div .right{
+    float: right;
+    width: 45%;
+    color: #999999;
+}
+
+input{
+    width: 100%;
+}
+
+button{
+    margin: 40px 0px;
+}
+
+
