@@ -1,0 +1,17 @@
+body{
+    font-family: Arial,Helvetica,sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    width: 687px;
+}
+
+p{
+    line-height: 1.6;
+}
+
+img{
+    vertical-align: middle;
+    margin: 0;
+    width: 660px;
+    height: 496px;
+}

@@ -1,0 +1,41 @@
+/*Selector{*/
+/*    property1: value1;*/
+/*    property2: value2;*/
+/*}*/
+
+/*Selector can be a tag/ id/ class*/
+
+body{
+    /*background-color: darkseagreen;*/
+    background-image: url("../images/3.jpeg");
+    /*background-size: 600px 300px;*/
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+}
+
+h1{
+    color: rgba(255, 20, 147, 0.5);
+    /*color: deeppink;*/
+    font-family: 'Roboto Slab';
+}
+
+p{
+    color: #0048ff;
+    font-size: 16px;
+    font-weight: 400;
+    /*font-weight: thin=100/light=300/normal=100/medium=500/semi-bold=600/bold=700/extra-bold=800/black=900 ;*/
+    font-family: 'Roboto Slab';
+    line-height: 1.5;
+    /*line-height: 24px (= 16px x 1.5);*/
+    text-align: justify;
+    text-decoration: none;
+    text-transform: none;
+    font-style: italic;
+    background-color: grey;
+    width: 550px;
+}
+
+a{
+    text-decoration: none;
+}
+
