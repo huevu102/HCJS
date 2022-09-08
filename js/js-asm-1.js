@@ -34,4 +34,4 @@ function printPrime(){
     }
 }
 
-setInterval(printPrime, 1000);
+var stop = setInterval(printPrime, 1000);
