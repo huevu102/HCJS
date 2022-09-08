@@ -22,17 +22,9 @@ function nextPrime(n){
     }
 }
 
-var num = 2;
-var count = 1;
-
-function printPrime(){
+var num = 3;
+function printNextPrime(){
     var i = document.getElementById("prime");
     i.innerText += " " + num;
     num = nextPrime(num);
-    count++;
-    if(count > 10){
-        clearInterval(stop);
-    }
 }
-
-var stop = setInterval(printPrime, 1000);
