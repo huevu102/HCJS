@@ -26,10 +26,10 @@ function printPrime(){
     if(checkPrime(num)){
         i.innerText += " " + num;
         console.log(num);
+        count++;
     }
-    count++;
     num++;
-    if(count>10){
+    if(count > 10){
         clearInterval(stop);
     }
 }
