@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Demo JS 4</title>
+    <link rel="stylesheet" href="css/popup.css"/>
 </head>
 <body>
+<!--    <form method="get" action="https://api.openweathermap.org/data/2.5/weather">-->
+<!--        <input type="text" name="q" placeholder="City..."/>-->
+<!--        <input type="text" name="appid"/>-->
+<!--        <input type="text" name="units"/>-->
+<!--        <button type="submit">Send</button>-->
+<!--    </form>-->
+
+    <!--Ảnh gif loading... trong khi chờ tải dữ liệu-->
+    <div class="bg-fade" id="bg-fade"></div>
+
     <h1>City: <span id="city">City name</span></h1>
     <h2>Temp: <span id="temp">30</span><sup>o</sup>C</h2>
     <h2>Pressure: <span id="press">1000</span></h2>
-    <button type="button" onclick="update()">Update</button>
+    <button type="button" onclick="update('hanoi')">Hanoi</button>
+    <button type="button" onclick="update('saigon')">Saigon</button>
+    <button type="button" onclick="update('london')">London</button>
+    <button type="button" onclick="update('new york')">NewYork</button>
+    <button type="button" onclick="update('tokyo')">Tokyo</button>
     <script type="text/javascript" src="js/demo4.js"></script>
 </body>
 </html>
