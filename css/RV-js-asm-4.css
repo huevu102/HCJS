@@ -1,0 +1,19 @@
+.forecast-page{
+    background-image: url("../images/forecast-backgroundimg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-weather{
+    float: left;
+    width: calc(25% - 30px);
+    background-color: #3c6c8f70;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    color: #fafafa;
+    height: 130px;
+}
+.box-weather img{
+    transform: translate(150px, -80px);
+    /*tranform:chỉ kéo vị trí nhìn, transition: kéo thật*/
+}

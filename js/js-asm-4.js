@@ -14,7 +14,7 @@ function forecast() {
             var iconNumber = arr[i].weather[0].icon;
             var icon = `<div style="float: right; width: 50%;"><img width="90" src="https://openweathermap.org/img/wn/${iconNumber}@2x.png"/></div>`;
 
-            var forecast = `<div style="float:left; width: calc(25% - 5px - 5px); color: #fafafa; background-color: cadetblue; margin: 5px; padding: 20px; box-sizing: border-box; border-radius: 15px;">${time}${weather}${icon}</div>`;
+            var forecast = `<div style="float:left; width: calc(25% - 5px - 5px); color: #fafafa; background-color: #38666785; margin: 5px; padding: 20px; box-sizing: border-box; border-radius: 15px;">${time}${weather}${icon}</div>`;
             document.getElementById("hourly-weather").innerHTML += forecast;
         }
     };
