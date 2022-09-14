@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo jQuery</title>
+</head>
+<body>
+  <h1 class="heading" id="head">T2207E</h1>
+
+  <!--Muốn dùng jquery thì phải gọi file trước thời điểm sử dụng-->
+  <script type="text/javascript" src="libs/jquery/jquery.3.6.1.js"></script>
+
+  <script type="text/javascript">
+    <!--jquery chỉ sử dụng được cho đối tượng jquery-->
+    var h = $("#head");
+    h.addClass("hello");
+    h.css("color", "red");
+
+    var h1 = $(".heading");
+    h1.css("color", "green");
+    var h2 = $("h1.heading#head");
+  </script>
+</body>
+</html>

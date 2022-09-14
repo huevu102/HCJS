@@ -1,0 +1,63 @@
+body{
+    background-color: #4AADA9;
+    color: #999999;
+    box-sizing: border-box;
+}
+
+.round{
+    margin: 50px auto;
+    width: 600px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.top-page{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #702D91;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: #FFFFFF;
+}
+
+.main{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+img{
+    width: 40px;
+    margin-bottom: 7px;
+}
+
+#terms{
+    color: #702D91;
+}
+
+#login{
+    color: #999999;
+}
+
+.input-bgc{
+    background-color: #dcdada;
+    border: none;
+    padding-left: 30px;
+    color: #999999;
+}
+
+#sign-up{
+    width: 250px;
+    color: #fff;
+    background-color: #702D91;
+    border: none;
+}
+
+

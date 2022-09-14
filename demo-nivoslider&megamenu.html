@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Nivoslider</title>
+    <link rel="stylesheet" href="css/layout.css"/>
+    <link rel="stylesheet" href="libs/nivoslider/themes/default/default.css"/>
+    <link rel="stylesheet" href="libs/nivoslider/nivo-slider.css"/>
+    <link rel="stylesheet" href="libs/megamenu/css/style.css"/>
+</head>
+<body>
+
+<!--Megamenu-->
+    <nav class="navigation section">
+        <div class="container">
+            <div class="menu-container">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="http://marioloncarek.com">About</a>
+                            <ul>
+                                <li><a href="#">School</a>
+                                    <ul>
+                                        <li><a href="#">Lidership</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Locations</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Study</a>
+                                    <ul>
+                                        <li><a href="#">Undergraduate</a></li>
+                                        <li><a href="#">Masters</a></li>
+                                        <li><a href="#">International</a></li>
+                                        <li><a href="#">Online</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Research</a>
+                                    <ul>
+                                        <li><a href="#">Undergraduate research</a></li>
+                                        <li><a href="#">Masters research</a></li>
+                                        <li><a href="#">Funding</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Something</a>
+                                    <ul>
+                                        <li><a href="#">Sub something</a></li>
+                                        <li><a href="#">Sub something</a></li>
+                                        <li><a href="#">Sub something</a></li>
+                                        <li><a href="#">Sub something</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">News</a>
+                            <ul>
+                                <li><a href="#">Today</a></li>
+                                <li><a href="#">Calendar</a></li>
+                                <li><a href="#">Sport</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://marioloncarek.com">Contact</a>
+                            <ul>
+                                <li><a href="#">School</a>
+                                    <ul>
+                                        <li><a href="#">Lidership</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Locations</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Study</a>
+                                    <ul>
+                                        <li><a href="#">Undergraduate</a></li>
+                                        <li><a href="#">Masters</a></li>
+                                        <li><a href="#">International</a></li>
+                                        <li><a href="#">Online</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Study</a>
+                                    <ul>
+                                        <li><a href="#">Undergraduate</a></li>
+                                        <li><a href="#">Masters</a></li>
+                                        <li><a href="#">International</a></li>
+                                        <li><a href="#">Online</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Empty sub</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!--Nivoslider-->
+    <section class="banner section">
+        <div class="container theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/toystory.jpg" data-thumb="images/toystory.jpg" alt="" />
+                <img src="images/up.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" />
+                <img src="images/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" />
+            </div>
+        </div>
+    </section>
+
+<!--Nếu muốn để nội dung rộng full trang thì không dùng container-->
+    <section class="map section" id="map" style="height: 300px">
+
+    </section>
+
+    <script type="text/javascript" src="libs/jquery/jquery.3.6.1.js"></script>
+
+    <script type="text/javascript" src="libs/nivoslider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $('#slider').nivoSlider();
+    </script>
+
+    <script type="text/javascript" src="libs/megamenu/js/megamenu.js"></script>
+
+    <script type="text/javascript">
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 21.0288058, lng: 105.7804978 },
+                zoom: 17,
+            });
+        }
+
+        window.initMap = initMap;
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA66KwUrjxcFG5u0exynlJ45CrbrNe3hEc&callback=initMap&v=weekly"
+        defer
+    ></script>
+</body>
+</html>
